@@ -30,3 +30,4 @@ filter_data = filter.main(pre_data)
 print (filter_data.shape)
 fft_data =  pyfftw.FFTW(filter_data)
 plt.plot(fft_data,'o')
+#fffffffffffff
