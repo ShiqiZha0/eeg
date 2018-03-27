@@ -11,6 +11,7 @@ from scipy.fftpack import fft,ifft
 import matplotlib.pyplot as plt
 import scipy.signal as signal
 
+
 f1=0.5
 f2=0.9
 f3=1.1
@@ -37,7 +38,7 @@ wc2=2*f3/fs
 wc3=2*f4/fs
 A=[0,1,0]
 weigh=[1,1,1]
-bands = [0,0.6,0.99,1.01,1.25,5]
+bands = [0,0.7,0.99,1.01,1.25,5]
 desired = [0, 0, 1, 1, 0, 0]
 fir_firls = signal.firwin2(60, bands, desired, fs=fs)
 
